@@ -6,25 +6,26 @@
         <meta http-equiv="Content-Language" content="pt-br, en"> <!--definido para português e inglês-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!--Arquivos de css-->
+        <!--Arquivo de css-->
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <!--Fontes utilizadas-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+        <!--Icones bonitinhos-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
-        <!-- Navigation bar with social media icons -->
-        <div class="w3-bar w3-black w3-hide-small">
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
-        <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+        <!--Icones de social media-->
+        <div class="barraDeIcones">
+            <a href="#" class="iconesMedias botao"><i class="fa fa-facebook-official"></i></a>
+            <a href="#" class="iconesMedias botao"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="iconesMedias botao"><i class="fa fa-snapchat"></i></a>
+            <a href="#" class="iconesMedias botao"><i class="fa fa-flickr"></i></a>
+            <a href="#" class="iconesMedias botao"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="iconesMedias botao"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="iconesMedias botao posicaoDireita"><i class="fa fa-search"></i></a>
         </div>
         
         <!-- w3-content defines a container for fixed size centered content, 
@@ -66,7 +67,7 @@
                     magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
                 <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                 <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
-                <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+                <p class="posicaoDireita"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
                 <p class="w3-clear"></p>
                 <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
                     <hr>
@@ -95,7 +96,7 @@
                 <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
                     mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
                 <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
-                <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Replies  </b> <span class="w3-tag w3-white">2</span></button></p>
+                <p class="posicaoDireita"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Replies  </b> <span class="w3-tag w3-white">2</span></button></p>
                 <p class="w3-clear"></p>
                 
                 <!-- Example of comment field -->
@@ -136,7 +137,7 @@
                 <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
                     mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
                 <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
-                <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
+                <p class="posicaoDireita"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
                 <p class="w3-clear"></p>
                 
                 <!-- Example of comment field -->
@@ -310,7 +311,7 @@
         <div id="subscribe" class="w3-modal w3-animate-opacity">
         <div class="w3-modal-content" style="padding:32px">
             <div class="w3-container w3-white">
-            <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+            <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge posicaoDireita"></i>
             <h2 class="w3-wide">SUBSCRIBE</h2>
             <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
             <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>

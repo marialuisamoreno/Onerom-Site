@@ -12,3 +12,46 @@ body {
     color: #000;
     background-color: #f1f1f1;
 }
+
+.barraDeIcones {
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    position: static;
+    color: #eedd82!important;
+    background-color: #0f4d92!important
+}
+
+.iconesMedias {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+    text-align: left;
+    white-space: normal;
+}
+
+.botao {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.botao:hover {
+    color: #0f4d92!important;
+    background-color: #eedd82!important;
+}
+
+.posicaoDireita {
+    float: right!important;
+}
